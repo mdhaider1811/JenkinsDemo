@@ -176,6 +176,7 @@
 				1C2DC8DD21D9140600D4B6BC /* Sources */,
 				1C2DC8DE21D9140600D4B6BC /* Frameworks */,
 				1C2DC8DF21D9140600D4B6BC /* Resources */,
+				1C2DC91321D9532400D4B6BC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -295,6 +296,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1C2DC91321D9532400D4B6BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" cf2dd73423bc5e33e901efbabbff9109ae926a3e 964469a84204aed3ca062a37693e341ad827e89f5cc2d997d3311a5b3da98977\n";
+		};
 		2DA73BF4B0A35FE8F78786B8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -547,6 +566,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 6E2QT4S838;
 				INFOPLIST_FILE = JenkinsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
