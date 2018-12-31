@@ -5,22 +5,22 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.009936">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.012224">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: update_fastlane" time="8.656877">
+      <testcase classname="fastlane.lanes" name="1: update_fastlane" time="8.523285">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: clear_derived_data" time="0.463345">
+      <testcase classname="fastlane.lanes" name="2: clear_derived_data" time="0.372305">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: run_tests" time="49.131002">
+      <testcase classname="fastlane.lanes" name="3: run_tests" time="46.609811">
         
       </testcase>
     
