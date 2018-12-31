@@ -11,7 +11,7 @@
 #
 
 # Uncomment the line if you want fastlane to automatically update itself
-# update_fastlane
+update_fastlane
 
 before_all do
   ENV['DEVELOPER_DIR'] = '/Applications/Xcode.app/Contents/Developer'
@@ -29,4 +29,21 @@ platform :ios do
             devices: ["iPhone 5s"],
             scheme: "JenkinsDemo")
   end
+
+  lane :beta do
+    gym(
+      scheme: "JenkinsDemo",
+      export_method: "ad-hoc",
+    )
+
+    mobile_center_upload(
+      api_token: "f3c9146f54aff7c02159b4599e2a54c6e5f0fbcb",
+      owner_name: "mdhaider_1811",
+      app_name: "JenkinsDemo",
+      ipa: "./JenkinsDemo.ipa",
+      group: "Collaborators",
+      release_notes: "Pops!"
+    )
+  end
+
 end
