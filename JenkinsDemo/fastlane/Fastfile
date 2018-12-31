@@ -23,7 +23,7 @@ end
 default_platform(:ios)
 
 platform :ios do
-  desc "Lauch simulator and run application"
+  desc "Lauch simulator and run application. Do some tests."
   lane :tests do
 	run_tests(workspace: "JenkinsDemo.xcworkspace",
             devices: ["iPhone 5s"],
