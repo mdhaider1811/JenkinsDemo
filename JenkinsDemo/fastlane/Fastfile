@@ -26,7 +26,7 @@ platform :ios do
   desc "Lauch simulator and run application."
   lane :tests do
 	run_tests(workspace: "JenkinsDemo.xcworkspace",
-            devices: ["iPhone 5s"],
+            devices: ["iPhone X"],
             scheme: "JenkinsDemo")
   end
 
