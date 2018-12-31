@@ -13,6 +13,13 @@
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
 
+before_all do
+  ENV['DEVELOPER_DIR'] = '/Applications/Xcode.app/Contents/Developer'
+  skip_docs
+  update_fastlane
+  clear_derived_data
+end
+
 default_platform(:ios)
 
 platform :ios do
