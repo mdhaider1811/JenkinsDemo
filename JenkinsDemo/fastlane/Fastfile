@@ -42,7 +42,7 @@ platform :ios do
       app_name: "JenkinsDemo",
       ipa: "./JenkinsDemo.ipa",
       group: "Collaborators",
-      release_notes: "Pops!"
+      release_notes: "Build 3"
     )
   end
 
